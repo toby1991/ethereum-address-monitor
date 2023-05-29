@@ -18,12 +18,12 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-// go run main.go -infura <your_infura_token_here> -address <address_to_monitor> -apikey <pushover_api_key> -user_key <pushover_user_key>
+// go run main.go -infura <your_infura_token_here> -address <address_to_monitor> -apikey <pushover_api_key> -userkey <pushover_user_key>
 func main() {
 	your_infura_token_here := flag.String("infura", "", "infura token")
 	monitor_address := flag.String("address", "", "address to monitor")
 	api_key := flag.String("apikey", "", "pushover api key")
-	user_key := flag.String("user_key", "", "pushover user key")
+	user_key := flag.String("userkey", "", "pushover user key")
 
 	flag.Parse()
 
